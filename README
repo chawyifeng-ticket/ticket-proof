@@ -1,0 +1,16 @@
+## 🔒 Image Watermarking (IMPORTANT)
+
+All images must be watermarked before uploading to ensure authenticity and prevent unauthorized reuse.
+
+### 🛠️ Tool Used
+
+Watermarking is done using:
+
+https://proton.me/drive/image-watermark
+
+---
+
+### 🧾 Standard Watermark Settings
+
+Use the following configuration for all images:
+![setting](images/watermarks_setting/setting.jpg)
