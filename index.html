@@ -66,8 +66,8 @@
 
       .card img {
         width: 100%;
-        height: 250px;
-        object-fit: cover;
+        height: auto;
+        display: block;
       }
 
       .card p {
@@ -102,74 +102,205 @@
         padding: 20px;
         color: #666;
       }
+
+      .profile {
+        background: white;
+        border-radius: 14px;
+        padding: 28px;
+        text-align: center;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+      }
+
+      .profile h2 {
+        margin-bottom: 5px;
+        font-size: 26px;
+      }
+
+      .tagline {
+        color: #666;
+        margin-bottom: 20px;
+        font-size: 14px;
+      }
+
+      /* Info layout */
+      .info-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 12px;
+        margin-bottom: 20px;
+      }
+
+      .info-item {
+        background: #f7f7f7;
+        padding: 12px;
+        border-radius: 10px;
+      }
+
+      .label {
+        display: block;
+        font-size: 12px;
+        color: #888;
+      }
+
+      .value {
+        font-weight: bold;
+        color: #222;
+      }
+
+      /* badges */
+      .badges {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+      }
+
+      .badge {
+        background: #222;
+        color: white;
+        padding: 8px 12px;
+        border-radius: 20px;
+        font-size: 12px;
+      }
+
+      .hero {
+        background: linear-gradient(135deg, #111, #2b2b2b);
+        color: white;
+        text-align: center;
+        padding: 60px 20px;
+      }
+
+      .hero-content {
+        max-width: 800px;
+        margin: auto;
+      }
+
+      .hero h1 {
+        font-size: 42px;
+        margin-bottom: 10px;
+        letter-spacing: 1px;
+      }
+
+      .subtitle {
+        font-size: 16px;
+        color: #ccc;
+        margin-bottom: 20px;
+      }
+
+      .hero-badges {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .hero-badges span {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 8px 14px;
+        border-radius: 20px;
+        font-size: 13px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+      }
     </style>
   </head>
 
   <body>
-    <header>
-      <h1>✅ Trusted Seller</h1>
-      <p>Proof of completed transactions & customer feedback</p>
+    <header class="hero">
+      <div class="hero-content">
+        <h1>Trusted Seller</h1>
+        <p class="subtitle">
+          Verified transaction history • Customer feedback • Proof of sales
+        </p>
+
+        <div class="hero-badges">
+          <span>🔒 Secure Deals</span>
+          <span>⚡ Fast Response</span>
+          <span>📦 Proof Available</span>
+        </div>
+      </div>
     </header>
 
     <div class="container">
       <!-- PROFILE -->
       <div class="profile">
-        <h2>Your Seller Name</h2>
-        <p>Fast response • Secure payment • Genuine transactions</p>
+        <h2>Chaw Yi Feng</h2>
+        <p class="tagline">Trusted seller • Fast response • Proof available</p>
 
-        <div class="stats">
-          <div class="stat">
-            <h2>150+</h2>
-            <p>Completed Orders</p>
+        <div class="info-grid">
+          <div class="info-item">
+            <span class="label">WhatsApp</span>
+            <span class="value">+60 014-304 3690</span>
           </div>
 
-          <div class="stat">
-            <h2>98%</h2>
-            <p>Positive Feedback</p>
+          <div class="info-item">
+            <span class="label">Instagram</span>
+            <span class="value">@chawyifeng</span>
           </div>
 
-          <div class="stat">
-            <h2>3 Years</h2>
-            <p>Selling Experience</p>
+          <div class="info-item">
+            <span class="label">Facebook</span>
+            <span class="value">Chaw Yi Feng</span>
           </div>
         </div>
 
-        <div class="contact">
-          <button>WhatsApp: +60 12-345 6789</button>
+        <div class="badges">
+          <span class="badge">✔ Purchase proof available</span>
+          <span class="badge">✔ Cash on delivery (COD)</span>
+          <span class="badge">✔ Carousell / Goofish / 闲鱼 supported</span>
         </div>
       </div>
 
-      <!-- ARTIST 1 -->
-      <h2 class="section-title">By Artist - Artist 1</h2>
+      <!-- ARTIST 1: BAEKHYUN -->
+      <h2 class="section-title">By Artist - Baekhyun</h2>
 
       <div class="gallery">
         <div class="card">
-          <img src="images/artist1_1.jpg" />
-          <p>Artist 1 - Order proof</p>
+          <img src="images/baekhyun_1.jpeg" />
+          <p>Baekhyun - Order proof 1</p>
         </div>
 
         <div class="card">
-          <img src="images/artist1_2.jpg" />
-          <p>Artist 1 - Feedback</p>
+          <img src="images/baekhyun_2.jpeg" />
+          <p>Baekhyun - Order proof 2</p>
         </div>
       </div>
 
-      <!-- ARTIST 2 -->
-      <h2 class="section-title">By Artist - Artist 2</h2>
+      <!-- ARTIST 2: GD -->
+      <h2 class="section-title">By Artist - G-Dragon</h2>
 
       <div class="gallery">
         <div class="card">
-          <img src="images/artist2_1.jpg" />
-          <p>Artist 2 - Order proof</p>
+          <img src="images/gd_1.jpeg" />
+          <p>GD - Order proof 1</p>
         </div>
 
         <div class="card">
-          <img src="images/artist2_2.jpg" />
-          <p>Artist 2 - Customer review</p>
+          <img src="images/gd_2.jpeg" />
+          <p>GD - Order proof 2</p>
+        </div>
+
+        <div class="card">
+          <img src="images/gd_3.jpeg" />
+          <p>GD - Order proof 3</p>
+        </div>
+      </div>
+
+      <!-- ARTIST 3: JJ LIN -->
+      <h2 class="section-title">By Artist - JJ Lin</h2>
+
+      <div class="gallery">
+        <div class="card">
+          <img src="images/jjlin_1.jpeg" />
+          <p>JJ Lin - Order proof 1</p>
+        </div>
+
+        <div class="card">
+          <img src="images/jjlin_2.jpeg" />
+          <p>JJ Lin - Order proof 2</p>
         </div>
       </div>
     </div>
 
-    <footer>© 2026 Your Seller Name</footer>
+    <footer>© 2026 Chaw Yi Feng</footer>
   </body>
 </html>
